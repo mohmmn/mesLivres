@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mohamed Mimouni - Livres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MM</div>
+        <div>
+          <h1>Mohamed Mimouni - Livres</h1>
+          <p class="lead">Ce site présente mes livres et offre un accès direct au contenu.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>À propos de moi</h2>
+      <p>
+        Je m'appelle Mohamed, j'ai 21 ans. Mon domaine de prédiléction c'est l'informatique mais j'ai beaucoup d'autres centres d'intérêts
+        comme le street-workout, le beatbox et la lecture. Je suis accro à l'adrénaline et amoureux de la nature. Mes potes me disent souvent que j'suis fou.
+        Je penses que j'ai une imagination débordante, et même si je suis plutôt stable et jovial, je me sens seul et à l'écart du monde moderne.
+        J'éprouve le besoin de m'exprimer car ce n'est pas toujours facile de se retrouver face à soi-même et ses peurs, ses pensées. Je crois que c'est quelque chose qu'on ressens tous à différents degrés à travers nos vies.
+        J'écris parce que la vie c'est aussi une histoire un beau voyage qui mérite d'être raconté.
+      </p>
+    </section>
+
+    <div class="card">
+  <div class="preview">
+    <div class="pdf-frame card">
+      <div class="pdf-top">
+        <div>
+          <div class="pdf-title">Une balade à la forêt</div>
+          <div class="small"> 
+            Une annecdote avec qui mêle action, introspection, et description.</div>
+        </div>
+        <div class="actions">
+          <a class="btn ghost" href="pdf/Lire balade à la forêt.pdf" target="_blank">Lire en ligne</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="card support-box">
+        <h3>Tu veux me soutenir ?</h3>
+        <a class="btn" href="https://buymeacoffee.com/mohmimouni" target="_blank">☕ Buy Me a Coffee</a>
+      </div>
+      
+      <div class="card support-box">
+        <h3>Mes réseaux sociaux</h3>
+        <a class="btn" href="https://instagram.com/mohaestethic" target="_blank">
+          <img src="files/img/insta.webp" style="width:18px;height:18px" alt="">
+          Instagram
+        </a>
+      </div>
+      
+      <div class="card support-box">
+        <h3>Mon contact</h3>
+        mohamimouni04@gmail.com
+      </div>
+    </aside>
+  </div>
+</div>
+
+    <section class="card">
+      <h2>Commentaires</h2>
+      <form id="commentForm" class="comment-form">
+        <input type="text" id="name" placeholder="Votre nom" required>
+        <textarea id="message" rows="3" placeholder="Votre commentaire" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+      <div id="commentsList"></div>
+    </section>
+
+    <footer>
+      <p>J'ai fais ce site en HTML/CSS/JS Native, si t'as des questions concernant le developpement web hésite pas à me contacter :)</p>
+    </footer>
+  </div>
+
+  <!-- Popup de notification -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="popupMessage"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
